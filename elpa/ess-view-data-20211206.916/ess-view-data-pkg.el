@@ -1,0 +1,2 @@
+;;; Generated package description from ess-view-data.el  -*- no-byte-compile: t -*-
+(define-package "ess-view-data" "20211206.916" "View Data" '((emacs "26.1") (ess "18.10.1") (csv-mode "1.12")) :commit "05888711212f9a9d72ecd48904de0c66adf6575a" :authors '(("Shuguang Sun" . "shuguang79@qq.com")) :maintainer '("Shuguang Sun" . "shuguang79@qq.com") :keywords '("tools") :url "https://github.com/ShuguangSun/ess-view-data")

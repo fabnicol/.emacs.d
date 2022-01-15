@@ -1,0 +1,9 @@
+*#
+*~
+auto-save-list/
+ede-projects.el
+semanticdb/
+smex-items
+transient/
+url/
+.emacs.desktop

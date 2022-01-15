@@ -1,0 +1,2 @@
+;;; Generated package description from etc-sudoers-mode.el  -*- no-byte-compile: t -*-
+(define-package "etc-sudoers-mode" "20201102.1707" "Edit Sudo security policies" '((sudo-edit "0") (with-editor "0")) :commit "74c66c58c9578a0d841206d5dec04d81e7b3d741" :authors '(("Peter Oliver" . "git@mavit.org.uk")) :maintainer '("Peter Oliver" . "git@mavit.org.uk") :keywords '("languages") :url "https://gitlab.com/mavit/etc-sudoers-mode/")

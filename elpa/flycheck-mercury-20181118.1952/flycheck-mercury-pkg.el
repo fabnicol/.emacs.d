@@ -1,0 +1,2 @@
+;;; Generated package description from /home/fab/.emacs.d/elpa/flycheck-mercury-20181118.1952/flycheck-mercury.el  -*- no-byte-compile: t -*-
+(define-package "flycheck-mercury" "20181118.1952" "Mercury support in Flycheck" '((flycheck "0.22") (s "1.9.0") (dash "2.4.0")) :commit "b6807a8db70981e21a91a93324c31e49de85c89f" :authors '(("Matthias Güdemann" . "matthias.gudemann@gmail.com")) :maintainer '("Matthias Güdemann" . "matthias.gudemann@gmail.com") :keywords '("convenience" "languages" "tools") :url "https://github.com/flycheck/flycheck-mercury")
