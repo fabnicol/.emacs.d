@@ -12,8 +12,7 @@
 (unless (package-installed-p 'use-package)
   (package-install 'use-package))
 (require 'use-package)
-(use-package metal-mercury-mode
-             :defer t)
+(require 'metal-mercury-mode)
 (autoload 'metal-mercury-mode "Mercury" "Major mode for editing Mercury programs." t)
 (setq use-package-always-ensure t)
 (require 'setup-general)
