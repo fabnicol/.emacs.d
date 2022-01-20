@@ -1,6 +1,7 @@
 (setq gc-cons-threshold 500000000)
 (add-to-list 'load-path "~/.emacs.d/custom")
 (add-to-list 'load-path "~/.emacs.d/metal-mercury-mode")
+(add-to-list 'load-path "/home/fab/Build/ESS/lisp")
 (autoload 'gid "idutils" nil t)
 (put 'scroll-left 'disabled nil)
 (require 'package)
@@ -46,7 +47,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(magit-libgit dash transient with-editor transient-dwim major-mode-icons markdown-preview-eww markdown-preview-mode magit-lfs 0blayout company-ctags flycheck workgroups2 epc npm-mode npm helm-xref ediprolog flycheck-mercury smartparens smex use-package-el-get nhexl-mode csv csv-mode ctags-update dante dired-git dired-rsync djvu docker docker-compose-mode docker-tramp dockerfile-mode download-region ess-R-data-view ess-r-insert-obj ess-smart-equals ess-smart-underscore ess-view ess-view-data esxml etc-sudoers-mode function-args helm-fuzzy helm-fuzzy-find imenu-anywhere info-buffer info-colors magithub muse nav ov helm-google helpful helm-R ess zygospore yasnippet ws-butler volatile-highlights use-package undo-tree spacemacs-theme projectile-variable projectile-speedbar projectile-direnv project-explorer markdown-mode magit-delta imenu-list iedit helm-projectile format-all dtrt-indent dired-narrow counsel-projectile company-quickhelp company-c-headers comment-dwim-2 clean-aindent-mode anzu))
+   '(xelb exwm exwm-edit exwm-firefox-core exwm-firefox-evil magit-libgit dash transient with-editor transient-dwim major-mode-icons markdown-preview-eww markdown-preview-mode magit-lfs 0blayout company-ctags flycheck workgroups2 epc npm-mode npm helm-xref ediprolog flycheck-mercury smartparens smex use-package-el-get nhexl-mode csv csv-mode ctags-update dante dired-git dired-rsync djvu docker docker-compose-mode docker-tramp dockerfile-mode download-region esxml etc-sudoers-mode function-args helm-fuzzy helm-fuzzy-find imenu-anywhere info-buffer info-colors magithub muse nav ov helm-google helpful helm-R zygospore yasnippet ws-butler volatile-highlights use-package undo-tree spacemacs-theme projectile-variable projectile-speedbar projectile-direnv project-explorer markdown-mode magit-delta imenu-list iedit helm-projectile format-all dtrt-indent dired-narrow counsel-projectile company-quickhelp company-c-headers comment-dwim-2 clean-aindent-mode anzu))
  '(safe-local-variable-values
    '((c-font-lock-extra-types "FILE" "bool" "language" "linebuffer" "fdesc" "node" "regexp")
      (c-indent-level . 4)))
@@ -68,6 +69,12 @@
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 (show-paren-mode 1)
+(setq shell-command-switch "-ic")
+(setq shell-file-name "bash")
+(setq display-buffer-alist
+  '(("^\\*R"
+     nil
+    (dedicated . t))))
 (setq gc-cons-threshold (* 2 1000 1000))
 (add-hook 'emacs-startup-hook
           (lambda ()
@@ -76,3 +83,6 @@
                              (float-time
                               (time-subtract after-init-time before-init-time)))
                      gcs-done)))
+
+(setq shell-file-name "bash")
+
