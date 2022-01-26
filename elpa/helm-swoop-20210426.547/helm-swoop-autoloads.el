@@ -76,6 +76,6 @@ Multi swoop edit." t nil)
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
-;; coding: utf-8
+;; coding: utf-8-emacs-unix
 ;; End:
 ;;; helm-swoop-autoloads.el ends here

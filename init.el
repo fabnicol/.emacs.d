@@ -33,9 +33,9 @@
 (global-set-key [C-S-mouse-1] 'delete-window)
 (require 'cc-mode)
 (use-package semantic
-  :defer 4
+  :defer 10
   :config
-  (global-semanticdb-minor-mode 1)
+  ;(global-semanticdb-minor-mode 1)
   (global-semantic-idle-scheduler-mode 1))
 (semantic-mode 1)
 (setq c-default-style "gnu" )
@@ -46,8 +46,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(astyle-custom-args
+   '("--style=gnu" "--align-pointer=name" "--align-reference=name" "--unpad-paren" "--pad-oper" "--pad-comma" "-H"))
+ '(display-fill-column-indicator-column 80)
  '(package-selected-packages
-   '(xelb exwm exwm-edit exwm-firefox-core exwm-firefox-evil magit-libgit dash transient with-editor transient-dwim major-mode-icons markdown-preview-eww markdown-preview-mode magit-lfs 0blayout company-ctags flycheck workgroups2 epc npm-mode npm helm-xref ediprolog flycheck-mercury smartparens smex use-package-el-get nhexl-mode csv csv-mode ctags-update dante dired-git dired-rsync djvu docker docker-compose-mode docker-tramp dockerfile-mode download-region esxml etc-sudoers-mode function-args helm-fuzzy helm-fuzzy-find imenu-anywhere info-buffer info-colors magithub muse nav ov helm-google helpful helm-R zygospore yasnippet ws-butler volatile-highlights use-package undo-tree spacemacs-theme projectile-variable projectile-speedbar projectile-direnv project-explorer markdown-mode magit-delta imenu-list iedit helm-projectile format-all dtrt-indent dired-narrow counsel-projectile company-quickhelp company-c-headers comment-dwim-2 clean-aindent-mode anzu))
+   '(astyle magit-libgit dash transient with-editor transient-dwim major-mode-icons markdown-preview-eww markdown-preview-mode magit-lfs 0blayout company-ctags flycheck epc npm-mode npm helm-xref ediprolog flycheck-mercury smartparens smex use-package-el-get nhexl-mode csv csv-mode ctags-update dante dired-git dired-rsync djvu docker docker-compose-mode docker-tramp dockerfile-mode download-region esxml etc-sudoers-mode function-args helm-fuzzy helm-fuzzy-find imenu-anywhere info-buffer info-colors magithub muse nav ov helm-google helpful helm-R zygospore yasnippet ws-butler volatile-highlights use-package undo-tree spacemacs-theme projectile-variable projectile-speedbar projectile-direnv project-explorer markdown-mode magit-delta imenu-list iedit helm-projectile format-all dtrt-indent dired-narrow counsel-projectile company-quickhelp company-c-headers comment-dwim-2 clean-aindent-mode anzu))
  '(safe-local-variable-values
    '((c-font-lock-extra-types "FILE" "bool" "language" "linebuffer" "fdesc" "node" "regexp")
      (c-indent-level . 4)))
@@ -59,7 +62,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-(setq wg-session-load-on-start t)
 (require 'man)
 (set-face-attribute 'Man-overstrike nil :inherit 'bold :foreground "orange red")
 (set-face-attribute 'Man-underline nil :inherit 'underline :foreground "forest green")
@@ -85,4 +87,3 @@
                      gcs-done)))
 
 (setq shell-file-name "bash")
-

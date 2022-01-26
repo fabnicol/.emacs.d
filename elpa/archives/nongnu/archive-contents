@@ -91,6 +91,16 @@
 		  (:maintainer "Bryan Gilbert" . "bryan@bryan.sh")
 		  (:authors
 		   ("Bryan Gilbert <http://github/gilbertw1>")))])
+ (bind-map .
+	   [(1 1 2)
+	    ((emacs
+	      (24 3)))
+	    "Bind personal keymaps in multiple locations" tar
+	    ((:url . "https://github.com/justbur/emacs-bind-map")
+	     (:maintainer "Justin Burkett" . "justin@burkett.cc")
+	     (:authors
+	      ("Justin Burkett" . "justin@burkett.cc"))
+	     (:commit . "6977e0fec5c4a3c62a10503798c2a15194167046"))])
  (bison-mode .
 	     [(0 4)
 	      nil "Major mode for editing bison, yacc and lex files." tar
@@ -222,6 +232,17 @@
 		  (:maintainer "Étienne Deparis" . "etienne@depar.is")
 		  (:authors
 		   ("film42")))])
+ (drupal-mode .
+	      [(0 7 4)
+	       ((php-mode
+		 (1 5 0)))
+	       "Advanced minor mode for Drupal development" tar
+	       ((:url . "https://github.com/arnested/drupal-mode")
+		(:keywords "programming" "php" "drupal")
+		(:maintainer "Arne Jørgensen" . "arne@arnested.dk")
+		(:authors
+		 ("Arne Jørgensen" . "arne@arnested.dk"))
+		(:commit . "ed90b0c4d808365e9ae9f16cc8a96eff17815621"))])
  (editorconfig .
 	       [(0 8 2)
 		((cl-lib
@@ -1167,12 +1188,13 @@
 		    (:authors
 		     ("John Olsson" . "john@cryon.se")))])
  (subed .
-	[(0 0 3)
+	[(0 0 4)
 	 ((emacs
 	   (25 1)))
 	 "A major mode for editing subtitles" tar
 	 ((:url . "https://github.com/rndusr/subed")
-	  (:keywords "convenience" "files" "hypermedia" "multimedia"))])
+	  (:keywords "convenience" "files" "hypermedia" "multimedia")
+	  (:commit . "f69c3e09f21403722dd5294b0b640a15201afbf5"))])
  (swift-mode .
 	     [(8 4 2)
 	      ((emacs
